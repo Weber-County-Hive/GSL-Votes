@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kyle and the Great Salt Lake</title>
+<meta name="description" content="Every Great Salt Lake and water vote Rep. Jason Kyle cast, 2023–2026, checked against the public record and graded on The Weber County Hive's collective rubric.">
+<style>
+:root{--ink:#12304a;--soft:#4a5d6e;--blue:#1f4e6b;--line:#d6dee6;--bg:#ffffff;--wash:#f3f6f9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.6 Georgia,'Times New Roman',serif}
+a{color:#1f5f9e}
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;display:block;margin-top:2px}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif;margin-top:48px}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block}
+header.hero{background:linear-gradient(180deg,#1f4e6b,#12304a);color:#fff;padding:36px 20px 30px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero h1{margin:0 0 8px;font-size:2.1rem;line-height:1.2}
+header.hero p{margin:4px 0;color:#dbe7f0}
+.dates{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:#c8d8e4;margin-top:10px}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.jump a{background:#fff;color:var(--ink);text-decoration:none;padding:8px 14px;border-radius:6px;font-size:16px;font-weight:700}
+main h2{font-size:1.6rem;margin:46px 0 12px;padding-top:10px;border-top:3px solid var(--ink)}
+main h3{font-size:1.3rem;margin:30px 0 8px}
+blockquote{margin:16px 0;padding:14px 18px;background:var(--wash);border-left:5px solid var(--blue);font-style:italic}
+.tw{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:16.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--wash);font-size:15px}
+tr:nth-child(even) td{background:#fafcfd}
+.data h2{border-top-color:var(--blue)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0}
+.tile{background:var(--wash);border-radius:6px;padding:14px}
+.tn{font-size:2.6rem;font-weight:700;line-height:1}
+.tl{font-size:16px;margin-top:4px}
+.yrow{display:flex;align-items:center;gap:12px;margin:10px 0}
+.ylab{width:56px;font-weight:700;font-size:18px}
+.ytrack{flex:1;display:flex;background:#eef2f5;border-radius:4px;overflow:hidden;min-height:40px}
+.seg{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;min-height:40px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:16px;margin:8px 0 4px}
+.lg i{display:inline-block;width:16px;height:16px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+.note{font-size:15px;color:var(--soft)}
+.sc{border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin:12px 0;background:#fff}
+.sch{font-weight:700;font-size:18px}
+.scsub{font-weight:400;color:var(--soft)}
+.scg{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;margin:10px 0;font-size:17px}
+.sct{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);font-family:ui-monospace,Menlo,monospace}
+.arrow{font-size:28px;align-self:center;color:var(--blue)}
+.scv{font-size:15px;color:var(--soft)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}
+.filters label{display:flex;flex-direction:column;font-size:14px;color:var(--soft);gap:4px}
+.filters select,.filters input{font:inherit;font-size:17px;padding:8px 10px;border:1px solid #9fb0c0;border-radius:6px;background:#fff;color:var(--ink);min-width:170px}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:10px 16px;border-radius:6px;font-size:16px;font-weight:700;margin:4px 8px 4px 0}
+.pill{display:inline-block;color:#fff;border-radius:999px;padding:2px 10px;font-size:14px;font-weight:700;white-space:nowrap}
+#count{font-size:16px;color:var(--soft);margin:6px 0}
+details.sources{margin-top:46px;border:1px solid var(--line);border-radius:6px;padding:12px 16px;background:var(--wash)}
+details.sources summary{font-size:1.3rem;font-weight:700;cursor:pointer}
+details.sources li{margin:6px 0;font-size:16.5px}
+@media(max-width:640px){body{font-size:18px}header.hero h1{font-size:1.6rem}.scg{grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:start}.hb-bar img{width:38px;height:38px}}
+</style></head>
+<body>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span></span></a></div>
+<header class="hero"><div class="wrap">
+<h1>Rep. Jason Kyle and the Great Salt Lake: Every Vote, 2023–2026</h1>
+<p>Every Great Salt Lake and water vote Rep. Jason Kyle (R, House District 8) cast in the Utah House, checked against the record and graded on the Hive's collective rubric.</p>
+<div class="dates">Posted Oct. 25, 2026 · Updated Oct. 25, 2026</div>
+<div class="jump"><a href="#report">Read the full report</a><a href="#at-a-glance">At a glance</a><a href="#started-ended">Started vs. ended</a><a href="#explore">Search every vote</a><a href="#download">Download the data</a></div>
+</div></header>
+<main class="wrap">
+<section id="report">
+<p>On Oct. 25, 2026, Rep. Jason Kyle (R, House District 8) answered a constituent's Facebook comment about the Great Salt Lake. His reply, word for word, with the commenter's name removed:</p>
+<blockquote>
+<p>"[commenter's name removed] Why are you lying? The legislature has done more to help the GSL since I have been in than ever before. I've voted to rein in incentives, require water use disclosures, and to protect ratepayers from increased utility costs from data centers. I've also sponsored and passed legislation to help farmers voluntarily conserve water. I'm also an avid duck hunter and conservationist that loves our wetlands. I can guarantee you I spend more time in them than you. We can disagree on Amendment B but until Democrats poured over a million dollars into marketing against it, the majority of Utahns agreed with me. We'll see how it ends up but I'm glad they'll have an option to vote on it."</p>
+</blockquote>
+<p>This page checks what he said against the public record: every House floor vote he cast on a Great Salt Lake or water bill since he took office in January 2023, what each bill did, how each bill changed from start to finish, and what each vote meant for the collective. Every vote comes from the Legislature's own roll calls at le.utah.gov.</p>
+<h2>What he said, checked against the record</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>His words</th>
+<th>The record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"sponsored and passed legislation to help farmers voluntarily conserve water"</td>
+<td><strong>HB 520 (2024), Fallow Land Amendments.</strong> Kyle was the primary sponsor and Sen. McCay the floor sponsor. It passed the House 72-0-3 and the concurrence vote 72-0-3, and was signed March 12, 2024. It lets farmland that is fallowed (left unwatered) keep its farmland tax assessment (greenbelt). The fallowing must happen during limited water supply, as prudent farm management, or "to facilitate voluntary participation in a water management or agricultural water optimization program." The owner may send the county assessor a notice, and the assessor may require a land-management plan. The bill appropriates no money, and nothing in it sends the saved water to the Great Salt Lake. <strong>Accurate as far as it goes. It is a property-tax rule that removes a penalty for fallowing; it is not a water-delivery program.</strong></td>
+</tr>
+<tr>
+<td>"voted to rein in incentives"</td>
+<td><strong>HB 507 (2026)</strong>, sponsored by Roberts. Kyle voted Yea; the House vote was 69-1-5, and the bill was signed March 25, 2026. It bars local governments from giving incentives to large-load data centers, with exceptions, and the House majority's summary says property-tax incentives are generally capped at 60% (never above 80%). <strong>The vote is accurate.</strong> The state sales-tax exemption for data-center equipment is not in this bill. Utah News Dispatch/UIJP reported on Aug. 31, 2026 that the state cannot say what that exemption costs.</td>
+</tr>
+<tr>
+<td>"require water use disclosures"</td>
+<td><strong>HB 76 (2026), Data Center Water Transparency.</strong> Koford was the primary sponsor; Kyle was a cosponsor. He voted Yea on the House vote (72-0-3) and the concurrence vote (62-2-11). It was signed March 23, 2026. <strong>Accurate.</strong> The bill was amended to apply only to <em>new</em> data centers (UPR).</td>
+</tr>
+<tr>
+<td>"protect ratepayers from increased utility costs from data centers"</td>
+<td><strong>SB 132 (2025), Electric Utility Amendments</strong>, sponsored by Sandall. Kyle voted Yea; the House vote was 71-0-4, and the bill was signed March 25, 2025. It sets up a separate process for large-load customers and bars shifting their costs to other customers. <strong>The vote is accurate.</strong> It did not change Rocky Mountain Power's rate structure (Utah News Dispatch, March 25, 2025).</td>
+</tr>
+<tr>
+<td>"The legislature has done more to help the GSL since I have been in than ever before"</td>
+<td>This is his opinion, but the record lets readers test it. He voted Yea on every major Great Salt Lake bill: HB 491 and HB 513 (2023), HB 453 (2024), HB 446 and HB 520 (2025), and HB 410, HB 348, HB 247, and HCR 9 (2026). He also voted No on a set of conservation bills (see the list below).</td>
+</tr>
+<tr>
+<td>Amendment B</td>
+<td>He was the <strong>House sponsor</strong> of S.J.R. 2 (2025), not a cosponsor. It passed the House 55-17-3, with Kyle voting Yea, and the Senate 21-8.</td>
+</tr>
+<tr>
+<td>"until Democrats poured over a million dollars into marketing against it"</td>
+<td>The No committee, Utahns Protecting Our Constitution, raised about $1.28M across all years, including in-kind help. That is about $1.01M in cash; in 2026 it raised $897K in cash plus $254K in-kind. These figures come from its DEX exports through 9/25/26. <strong>Its filings list no party.</strong> The donors include unions, out-of-state groups, the ACLU of Utah, and individuals, and about 44% of 2026 money came from out of state. "Democrats" is his own label.</td>
+</tr>
+<tr>
+<td>"the majority of Utahns agreed with me"</td>
+<td>The only public poll is Noble Predictive Insights (Sept. 8–12, 2026): 50% support, 21% oppose, 23% unsure. 50% is half, not a majority.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>How to read this</h2>
+<p><strong>Vote words</strong>
+- <strong>Yea</strong> means he voted yes. <strong>Nay</strong> means he voted no. <strong>Absent</strong> means he didn't vote.
+- <strong>3rd reading</strong> is the House's final vote on a bill.
+- <strong>Concurrence</strong> is the vote to accept changes the Senate made.
+- Each vote is shown as yes–no–absent (for example, 71-0-4).
+- A House bill needs <strong>38 yes votes</strong> (a majority of all 75 members) to pass. So a bill that "failed 35-36" was short of passing even if one more member had switched.</p>
+<p><strong>The rubric</strong> is the Hive's standing collective rubric:
+- <strong>Power:</strong> does it add or remove a public check?
+- <strong>Transparency:</strong> can the public see it?
+- <strong>Financial accountability:</strong> who pays, and is it plain?
+- <strong>Environmental impact:</strong> water, wetlands, wildlife, and whether it is a real constraint or a box to check.
+- <strong>Community impact:</strong> who carries the cost, and did they get standing to be heard?</p>
+<p><strong>The grades</strong>
+- <strong>C</strong> meets what the law already requires (the status quo).
+- <strong>B or A</strong> goes beyond it, and the record shows it.
+- <strong>D</strong> means something is vague, late, or bundled, or a public check is weakened.
+- <strong>F</strong> means something required is missing, or a check is removed with nothing in its place.
+- A bill that died is graded on what it would have done.</p>
+<p><strong>Where each grade comes from</strong>
+- <strong>(Hive grade)</strong> is the grade already published on the Hive's Bill-Tracker or a case page. It was kept as published.
+- <strong>(new grade)</strong> is a first grade written for these notes. It is based on the bill's official highlighted provisions in the Legislature's own bill data file (le.utah.gov/data/…json), <strong>not a full read of the bill text</strong>. Treat it as preliminary until the bill text is read.</p>
+<p><strong>What his vote meant</strong>
+- A <strong>Yea on a B/A bill</strong> or a <strong>Nay on a D/F bill</strong> sided with the collective.
+- A <strong>Nay on a B/A bill</strong> or a <strong>Yea on a D/F bill</strong> went against it.
+- A C bill is mostly housekeeping, so the vote mattered less.</p>
+<hr />
+<h2>The short answer</h2>
+<p><strong>Votes that helped the lake (Yea on B-level bills):</strong> 2023 HB 513, HB 349, and SB 118. 2024 HB 453, SB 242, HB 61, HB 275, SB 125, and HB 448. 2025 HB 243, HB 274, HB 244, and SB 36. 2026 HB 247 and HB 349.</p>
+<p><strong>Votes that cut against the lake (Nay on B-level bills):</strong>
+- 2024: SB 18 (saved water), HB 11 (spray irrigation), HB 243 (riparian), and HB 535 (GSL commissioner conservation study, where he was the only no).
+- 2025: HB 328 (spray irrigation) and SB 80 (water fees that reward meters and tiered rates).
+- 2026: HB 296 (counting water given to the lake) and HB 328 (spray irrigation).</p>
+<p><strong>Votes for bills the Hive already graded D or F (Yea):</strong>
+- HB 491 (2023, F)
+- HB 60 (2026, F)
+- HB 76 (2026, F). This is the "water use disclosures" bill he cites; the Hive's grade is F because a late substitute let operators keep facility water data private.
+- HB 509 (2026, F)
+- HB 157 / HB 125 (2026, F)
+- SB 254 (2026, D)
+- HB 378 (2026, D)
+- HCR 9 (2026, D)
+- HB 501 (2026, D+)
+- SB 225 (2026, D) on the first vote. He voted Nay on the final vote.</p>
+<p><strong>Votes against bills graded D (Nay):</strong> 2024 SB 195, which would have made golf-course water data secret, and the final 2026 SB 225 vote.</p>
+<p><strong>His own bill, HB 520 (2024): C+ (new grade).</strong> It removes a property-tax penalty for fallowing farmland. Nothing in it moves the saved water to the lake, and no one reports where that water goes.</p>
+<hr />
+<h2>Bill by bill</h2>
+<h3>2023</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Bill</th>
+<th>Grade</th>
+<th>His vote</th>
+<th>What his vote meant for the collective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HB 491, Amendments Related to the Great Salt Lake (Schultz)</td>
+<td><strong>F (Hive grade)</strong>. It carved water rights and the State Engineer out of the new Commissioner's power, added a GRAMA exemption for water-rights records, and benefited the primary sponsor.</td>
+<td>Yea (73-0-2; concurrence 73-0-2)</td>
+<td>He backed the version that created the Commissioner while removing water-rights authority and adding a new secrecy exemption. Every House member voted yes, so his vote alone did not decide it.</td>
+</tr>
+<tr>
+<td>HB 513, Great Salt Lake Amendments (Snider)</td>
+<td><strong>B− (new grade)</strong>. It sends mineral royalties to the Great Salt Lake Account and adds terms for mineral leases on the lake.</td>
+<td>Yea (68-0-7; concurrence 69-0-6)</td>
+<td>Sided with money for the lake from mineral companies.</td>
+</tr>
+<tr>
+<td>HCR 7, Sentinel Landscape resolution</td>
+<td><strong>C (new grade)</strong>. A nonbinding resolution supporting a military/conservation land partnership.</td>
+<td>Yea (69-1-5)</td>
+<td>Symbolic; it changes nothing on its own.</td>
+</tr>
+<tr>
+<td>HB 307, Utah Water Ways (Musselman)</td>
+<td><strong>C (new grade)</strong>. Creates a water-conservation education partnership with state money.</td>
+<td>Yea (71-0-4)</td>
+<td>Neutral to helpful; it is education, not water to the lake.</td>
+</tr>
+<tr>
+<td>SB 277, Water Conservation and Augmentation (Sandall)</td>
+<td><strong>C (new grade)</strong>. Changes what the Water Infrastructure Restricted Account can pay for.</td>
+<td>Yea (72-0-3)</td>
+<td>Mostly a funding rule; its effect depends on how the money is spent.</td>
+</tr>
+<tr>
+<td>SB 118, Water Efficient Use (Sandall)</td>
+<td><strong>B (new grade)</strong>. Lets water districts get grants for conservation incentives, such as replacing lawn.</td>
+<td>Yea (60-12-3)</td>
+<td>Sided with paying people to use less water.</td>
+</tr>
+<tr>
+<td>HB 349, Water Reuse Projects (Snider)</td>
+<td><strong>B (new grade)</strong>. Bars approval of certain water-reuse projects that would harm the Great Salt Lake.</td>
+<td>Yea (71-0-4; 70-0-5)</td>
+<td>Sided with a real guardrail for the lake.</td>
+</tr>
+<tr>
+<td>HB 450, Landscaping Requirements (Wilcox)</td>
+<td><strong>B− (new grade)</strong>. Lets local governments set water-wise landscaping requirements.</td>
+<td>Yea (65-1-9; 70-1-4)</td>
+<td>Sided with local water-wise rules.</td>
+</tr>
+<tr>
+<td>HB 137, brine shrimp as the state crustacean</td>
+<td>Not graded (symbolic)</td>
+<td>Yea (45-24-6)</td>
+<td>No effect on the lake.</td>
+</tr>
+<tr>
+<td>HB 220, Emissions Reduction (Stoddard)</td>
+<td><strong>C+ (new grade)</strong>. Requires an emissions inventory and plan.</td>
+<td>Yea (73-0-2)</td>
+<td>A planning step only.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2024</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Bill</th>
+<th>Grade</th>
+<th>His vote</th>
+<th>What his vote meant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HB 520, Fallow Land Amendments (KYLE, primary sponsor)</strong></td>
+<td><strong>C+ (new grade)</strong>. Fallowed farmland keeps its farmland tax rate. That removes a reason farmers had to keep watering, which is better than the status quo. But it puts <strong>no requirement</strong> on where the unused water goes, there is <strong>no public report</strong>, and the assessor's land-management plan is optional.</td>
+<td>Yea, his own bill (72-0-3)</td>
+<td>A small step that makes voluntary conservation easier for farmers. It is not a water-for-the-lake program.</td>
+</tr>
+<tr>
+<td>HB 453, Great Salt Lake Revisions (Snider)</td>
+<td><strong>B (new grade)</strong>. Nearly triples the mineral-extraction severance tax (2.6% to 7.8%, per the Hive's "Life of the Lake" page) and creates incentives for voluntary cuts in water use by mineral companies.</td>
+<td>Yea (73-0-2)</td>
+<td>Sided with making lake mineral companies pay more and use less.</td>
+</tr>
+<tr>
+<td>SB 18, Water Modifications (Sandall)</td>
+<td><strong>B (new grade)</strong>. Protects "saved water" (water a holder conserves) from being forfeited under "use it or lose it," and sets rules for proving it.</td>
+<td><strong>Nay</strong> (66-3-6)</td>
+<td>One of three no votes against a change meant to let water holders conserve without losing their rights. <strong>This went against the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 280, Water Related Changes (Snider)</td>
+<td><strong>C (new grade)</strong>. State water plan changes and a water-infrastructure financing study.</td>
+<td><strong>Nay</strong> on the final vote (63-5-7); Yea on concurrence (71-3-1)</td>
+<td>Planning and study. His no, then yes, likely tracks Senate changes; the record doesn't say why.</td>
+</tr>
+<tr>
+<td>HB 275, Water Amendments (Snider)</td>
+<td><strong>B− (new grade)</strong>. Covers HOAs and water-wise landscaping, and lets the state engineer require data in a usable format.</td>
+<td>Yea (68-0-7; 70-0-5)</td>
+<td>Sided with water-wise yards and better data.</td>
+</tr>
+<tr>
+<td>HB 61, Water Measuring and Accounting (Albrecht)</td>
+<td><strong>B (new grade)</strong>. Adds telemetry (remote measuring) to state water policy.</td>
+<td>Yea (72-1-2)</td>
+<td>Sided with measuring water, which is the base of any accountability.</td>
+</tr>
+<tr>
+<td>HB 11, Water Efficient Landscaping Requirements (Owens)</td>
+<td><strong>B (new grade)</strong>. Restricts overhead spray irrigation by certain government entities.</td>
+<td><strong>Nay</strong> (51-22-2; concurrence 59-12-4)</td>
+<td>Voted twice against limiting wasteful spraying on government grounds. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>SB 211, Generational Water Infrastructure (Adams)</td>
+<td><strong>C (new grade)</strong>. Creates a Water District Water Development Council for large future water projects.</td>
+<td>Yea (70-4-1)</td>
+<td>Its effect depends on which projects the council picks; there is no lake requirement in the summary.</td>
+</tr>
+<tr>
+<td>SB 270, Utah Lake and Great Salt Lake Study (Bramble)</td>
+<td><strong>C (new grade)</strong>. A $1.5 million Utah Lake study by State Lands (despite the title, the summary covers Utah Lake).</td>
+<td><strong>Nay</strong>, the only no (71-1-3)</td>
+<td>Against a study. The lake impact is small; it was a lone no on spending.</td>
+</tr>
+<tr>
+<td>SB 242, Utah Lake Modifications (McKell)</td>
+<td><strong>B (new grade)</strong>. Repeals the Utah Lake Restoration Act and the Utah Lake diking project.</td>
+<td>Yea (66-2-7)</td>
+<td>Sided with ending a controversial island-building plan.</td>
+</tr>
+<tr>
+<td>HB 448, State Water Program Reporting (Ward)</td>
+<td><strong>B (new grade)</strong>. Requires the Division of Water Resources to track the state's water-optimization efforts.</td>
+<td>Yea (65-5-5). Died in the Senate</td>
+<td>Sided with reporting.</td>
+</tr>
+<tr>
+<td>HB 472, Water Revisions (King)</td>
+<td><strong>C+ (new grade)</strong>. A study of a state water database.</td>
+<td>Nay on the first vote (failed 34-31-10), then Yea when it passed after a re-vote (64-3-8). Died in the Senate</td>
+<td>Ended up supporting it.</td>
+</tr>
+<tr>
+<td>HB 243, Riparian Amendments (Bennion)</td>
+<td><strong>B (new grade)</strong>. Creates a state riparian (streamside) position and public information on riparian areas.</td>
+<td><strong>Nay</strong>. <strong>It failed 35-36-4</strong></td>
+<td>Against protecting streams that feed the lake. The bill needed 38, so his yes alone would not have passed it, but his no was one of the 36 that stopped it. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 535, Water Conservation Modifications (Kohler)</td>
+<td><strong>B (new grade)</strong>. Requires the Great Salt Lake Commissioner to study city water conservation and <strong>publish</strong> the findings.</td>
+<td><strong>Nay, the only no</strong> (70-1-4). Died in the Senate</td>
+<td>The only House member against a public study of saving city water for the lake. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>SB 77, Water Rights Restricted Account (Sandall)</td>
+<td><strong>C (new grade)</strong>. Changes what the account pays for.</td>
+<td>Yea (68-5-2)</td>
+<td>Housekeeping.</td>
+</tr>
+<tr>
+<td>SB 125, Secondary Water (Hinkins)</td>
+<td><strong>B− (new grade)</strong>. Metering at strategic points and changes to metering grant caps.</td>
+<td>Yea (71-0-4)</td>
+<td>Sided with metering.</td>
+</tr>
+<tr>
+<td>HJR 27, water-efficient landscaping resolution (Owens)</td>
+<td><strong>C+ (new grade)</strong>. Nonbinding.</td>
+<td>Yea (63-6-6). Died in the Senate</td>
+<td>Supportive but symbolic.</td>
+</tr>
+<tr>
+<td>HCR 11, growth impacts resolution (Bolinder)</td>
+<td><strong>C (new grade)</strong></td>
+<td>Yea (68-1-6)</td>
+<td>Symbolic.</td>
+</tr>
+<tr>
+<td>HB 62, Utah Water Ways Amendments (Owens)</td>
+<td><strong>C (new grade)</strong>. Water education in schools.</td>
+<td>Yea (65-8-2)</td>
+<td>Education.</td>
+</tr>
+<tr>
+<td>SB 195, Golf Course Amendments (McCay)</td>
+<td><strong>D (new grade)</strong>. Would have <strong>made golf-course water data a protected (secret) record</strong> while studying golf water use.</td>
+<td><strong>Nay</strong>. <strong>It failed 17-49-9</strong></td>
+<td>Sided with keeping water data public. <strong>With the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 42, Water Rights Publication (Briscoe)</td>
+<td><strong>C (new grade)</strong></td>
+<td>Yea (72-0-3)</td>
+<td>Housekeeping.</td>
+</tr>
+<tr>
+<td>HB 295, Produced Water (Lund)</td>
+<td><strong>C (new grade)</strong>. Oil-field water rules.</td>
+<td>Yea (73-0-2)</td>
+<td>Not a lake bill.</td>
+</tr>
+<tr>
+<td>SB 196 (Blouin, GSL wet-year plan) and HB 401 (Owens, turf watering limits)</td>
+<td><strong>B (new grade)</strong> each</td>
+<td>No House vote; both died earlier</td>
+<td>His vote was never asked.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2025</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Bill</th>
+<th>Grade</th>
+<th>His vote</th>
+<th>What his vote meant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S.J.R. 2, Amendment B</strong></td>
+<td>Not a lake bill</td>
+<td>Yea, as <strong>House sponsor</strong> (55-17-3)</td>
+<td>Listed for the record, since his comment raised it.</td>
+</tr>
+<tr>
+<td>HB 446, Great Salt Lake Amendments (Koford)</td>
+<td><strong>C+ (new grade)</strong>. Expands the GSL Commissioner's power to buy or lease water for the lake and requires a management plan, <strong>but</strong> exempts those deals from procurement rules, which is a transparency minus.</td>
+<td>Yea (66-0-9)</td>
+<td>Sided with more water-buying power for the lake, with less competitive bidding.</td>
+</tr>
+<tr>
+<td>HB 520 (2025), Water Entity Amendments (Snider)</td>
+<td><strong>C (new grade)</strong>. Moves the Commissioner under the Department of Natural Resources, expands the Great Salt Lake Trust Council's duties, and adds a conflict-of-interest penalty. The Hive's "Two Money Pots" page found the Trust Council operates with far less public visibility.</td>
+<td>Yea (70-0-5; 69-0-6)</td>
+<td>Mixed: a new conflict rule, alongside a less visible council.</td>
+</tr>
+<tr>
+<td>HB 243 (2025), Agricultural Water Optimization (Shallenberger)</td>
+<td><strong>B (new grade)</strong>. Funds research and measurement and requires a 25% match.</td>
+<td>Yea (66-0-9)</td>
+<td>Sided with measurable farm water savings.</td>
+</tr>
+<tr>
+<td>HB 274, Water Amendments (Snider)</td>
+<td><strong>B (new grade)</strong>. Lets cities set water rates based on conservation.</td>
+<td>Yea (67-2-6; 60-9-6)</td>
+<td>Sided with pricing that rewards conserving.</td>
+</tr>
+<tr>
+<td>HB 244, Wildlife Management Area (Snider)</td>
+<td><strong>B− (new grade)</strong>. Creates a waterfowl area of more than 13,000 acres in Bear River Bay, but loosens Willard Spur limits on dikes and boat access (S.J. Quinney Law, Mar. 5, 2025).</td>
+<td>Yea (67-0-8)</td>
+<td>Mostly for the wetlands, with one loosening.</td>
+</tr>
+<tr>
+<td>HB 41, HB 46, HB 47, HB 89, HB 174, HB 285, HB 311, SB 33</td>
+<td><strong>C (new grade)</strong> each. Water-policy housekeeping, rights paperwork, funds, and the watershed pathway.</td>
+<td>Yea on all</td>
+<td>Little direct lake effect.</td>
+</tr>
+<tr>
+<td>HB 478, Brine Mining (Bolinder)</td>
+<td><strong>C (new grade)</strong>. Rules and royalties for deep-aquifer brine, mainly outside the lake basin.</td>
+<td>Yea (69-0-6; 68-1-6)</td>
+<td>Not a lake bill.</td>
+</tr>
+<tr>
+<td>HB 499, DEQ Amendments (Snider)</td>
+<td><strong>C− (new grade)</strong>. Changes Air Quality Board qualifications and removes water-heater rules in ozone areas.</td>
+<td>Yea (56-13-6). Died</td>
+<td>Indirect effect on air and dust.</td>
+</tr>
+<tr>
+<td>SB 36, Water Quality Board (Weiler)</td>
+<td><strong>B− (new grade)</strong>. Gives the board a settlement and penalty process.</td>
+<td>Yea (63-0-12)</td>
+<td>Sided with enforcement.</td>
+</tr>
+<tr>
+<td>SB 132, Electric Utility Amendments (Sandall)</td>
+<td><strong>C (new grade)</strong>. Big new power users pay their own way, but large-load service is exempt from some rate rules.</td>
+<td>Yea (71-0-4)</td>
+<td>Sided with keeping data-center costs off household bills. That is the claim he makes, and it holds.</td>
+</tr>
+<tr>
+<td>HB 328 (2025), Water Usage Amendments (Owens)</td>
+<td><strong>B (new grade)</strong>. Bars overhead spray irrigation in specified new development.</td>
+<td><strong>Nay</strong>. <strong>It failed 32-36-7</strong></td>
+<td>Against a real limit on water waste in new building. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>SB 80, Water Fee Amendments (Sandall)</td>
+<td><strong>B (new grade)</strong>. Water fee schedules with incentives for residential meters and tiered rates (S.J. Quinney Law rated it positive).</td>
+<td><strong>Nay</strong> (62-7-6)</td>
+<td>One of seven no votes against pricing that rewards metering and conservation. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 368, Local Land Use (Whyte)</td>
+<td><strong>D (new grade)</strong>. Bars cities from requiring landscaping plans for permits (S.J. Quinney Law rated it negative for water).</td>
+<td>Absent on the final vote; <strong>Nay</strong> on concurrence (47-22-6)</td>
+<td>His no sided with cities keeping water-wise landscaping tools. <strong>With the collective.</strong></td>
+</tr>
+<tr>
+<td>SB 201, Real Estate (Harper)</td>
+<td>Not graded; the water part isn't clear from the summary</td>
+<td>Nay (54-17-4)</td>
+<td>Unclear.</td>
+</tr>
+<tr>
+<td>HB 45, HB 318, HB 330, HB 536, HB 546, SB 92, SB 131, SB 337</td>
+<td>Various (SB 337 is a Hive F)</td>
+<td>No House vote</td>
+<td>His vote was never asked.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2026</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Bill</th>
+<th>Grade</th>
+<th>His vote</th>
+<th>What his vote meant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HB 410, Water Leasing (Koford)</td>
+<td><strong>C (Hive grade)</strong>. A real leasing program with reports, but it was cut from $5M to $2.75M and a farmland safeguard was removed.</td>
+<td>Yea (69-1-5)</td>
+<td>Sided with the lake's main 2026 water program.</td>
+</tr>
+<tr>
+<td>HB 348, Dedicated Water (Koford)</td>
+<td><strong>C (Hive grade)</strong></td>
+<td>Yea (70-0-5)</td>
+<td>Sided with letting water be dedicated to the lake.</td>
+</tr>
+<tr>
+<td>HB 247, GSL Related Amendments (Ward)</td>
+<td><strong>B (new grade)</strong>. Sends brine-shrimp royalty money to the account that funds lake work, and funds leasing.</td>
+<td>Yea (71-0-4; 67-0-8)</td>
+<td>Sided with lake funding.</td>
+</tr>
+<tr>
+<td>HCR 9, Great Salt Lake resolution</td>
+<td><strong>D (Hive grade)</strong>. The subject was swapped mid-bill.</td>
+<td>Yea (70-1-4)</td>
+<td>Symbolic; the grade is for the process.</td>
+</tr>
+<tr>
+<td>HJR 30, Bear River refuge lakebed transfer</td>
+<td><strong>C (new grade)</strong>. Settles a lakebed ownership dispute.</td>
+<td>Yea (62-2-11)</td>
+<td>Neutral.</td>
+</tr>
+<tr>
+<td><strong>HB 76, Data Center Water Transparency (Koford)</strong></td>
+<td><strong>F (Hive grade)</strong>. It promised facility-level water data; a late substitute let operators claim it as proprietary, leaving only anonymized county totals public.</td>
+<td>Yea (72-0-3; concurrence 62-2-11)</td>
+<td><strong>This is the "water use disclosures" he cites.</strong> He voted yes again on concurrence, after the change that hid facility data.</td>
+</tr>
+<tr>
+<td>HB 60, Water Rights Amendments (Shallenberger)</td>
+<td><strong>F (Hive grade)</strong>. Narrows the "public welfare" grounds for objecting to a water application.</td>
+<td>Yea (54-17-4)</td>
+<td>Sided with removing public standing to challenge water use. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 507, data center incentives (Roberts)</td>
+<td><strong>C− (Hive grade; D as demonstrated so far)</strong></td>
+<td>Yea (69-1-5)</td>
+<td>This is the "rein in incentives" he cites. The Hive's grade is C−: it bars most local data-center incentives, but adds a new secrecy rule.</td>
+</tr>
+<tr>
+<td>HB 296, Water Commitment (Nguyen)</td>
+<td><strong>B (new grade)</strong>. Lets water providers count water committed to the Great Salt Lake in their conservation plans.</td>
+<td><strong>Nay</strong> (48-19-8)</td>
+<td>Against giving credit for sending water to the lake. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>HB 328 (2026), Water Usage Modifications (Okerlund)</td>
+<td><strong>B (new grade)</strong>. Limits overhead irrigation of nonfunctional turf in new development.</td>
+<td><strong>Nay</strong> (passed 39-29-7; died in the Senate)</td>
+<td>Against the same water-waste limit, a second year in a row. <strong>Against the collective.</strong></td>
+</tr>
+<tr>
+<td>SB 225, Inland Port water standard (Stevenson)</td>
+<td><strong>D (Hive grade)</strong>. Dropped the 200,000-gallon/day cap for local discretion, statewide.</td>
+<td>Yea on the first House vote (67-2-6). <strong>Nay</strong> on the final vote (57-10-8)</td>
+<td>He first voted for the version that dropped the cap, then voted against the final version. The water provision was the same in both, and the record doesn't show why he switched.</td>
+</tr>
+<tr>
+<td>HB 509, Wetlands Study (Owens)</td>
+<td><strong>F (Hive grade)</strong>. Cut from "Wetlands Protection" down to a narrow study.</td>
+<td>Yea (58-10-7; 57-8-10)</td>
+<td>Supported the cut-down version.</td>
+</tr>
+<tr>
+<td>HB 378, Fugitive Dust (Gricius)</td>
+<td><strong>D (Hive grade)</strong></td>
+<td>Yea (71-2-2)</td>
+<td>Supported a weak dust rule. Lakebed dust is a real lake harm.</td>
+</tr>
+<tr>
+<td>HB 349, Statewide Water Storage (Brooks)</td>
+<td><strong>B (Hive grade)</strong>. Died</td>
+<td>Yea (63-1-11)</td>
+<td>Supportive; the Senate killed it.</td>
+</tr>
+<tr>
+<td>SB 254, Extracted Natural Resources (Millner)</td>
+<td><strong>D (Hive grade)</strong></td>
+<td>Yea (60-12-3)</td>
+<td>Supported it.</td>
+</tr>
+<tr>
+<td>HB 157 / HB 125, water-litigation money</td>
+<td><strong>F (Hive grade)</strong>. $5M was moved and then stripped.</td>
+<td>Yea on both. He was also an HB 125 cosponsor</td>
+<td>Voted for both bills used in the switch.</td>
+</tr>
+<tr>
+<td>HB 501, Water Modifications (Bolinder)</td>
+<td><strong>D+ (Hive grade)</strong>. Died</td>
+<td>Yea (59-13-3)</td>
+<td>Supported it.</td>
+</tr>
+<tr>
+<td>SB 284, Local Land and Water (Fillmore)</td>
+<td><strong>D (Hive grade)</strong></td>
+<td>Absent (61-7-7)</td>
+<td>Did not vote.</td>
+</tr>
+<tr>
+<td>HB 187, Water Amendments (Jack)</td>
+<td><strong>C (new grade)</strong></td>
+<td>Yea (66-0-9)</td>
+<td>Housekeeping.</td>
+</tr>
+<tr>
+<td>SB 250 (Blouin, GSL) and SB 318 (Blouin, data center NDAs, Hive A−)</td>
+<td>Not reached</td>
+<td>No House vote</td>
+<td>Both died in the Senate.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>How each bill started compared with how it ended</h2>
+<p><strong>How this was read:</strong> For each bill, the introduced text was compared with the final text, both from le.utah.gov. The final text is the enrolled bill, or the last substitute for bills that died. For 2023, where no enrolled copy was found, the last substitute was used. The comparison covers the title, the "Highlighted Provisions" list, the money appropriated, and word searches of the full text for key terms. Earlier Hive Bill-Tracker case files, which read every version, are cited where they exist. Highlighted-provision lists are written by legislative staff, so a change there was checked against the full-text word counts before it is listed below.</p>
+<h3>Bills that changed in a way that matters</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Bill</th>
+<th>How it started</th>
+<th>How it ended</th>
+<th>His vote</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HB 520 (2024), Kyle's own bill</strong></td>
+<td>Fallowed land kept its farm tax rate only when fallowed "to facilitate land recovery and extend the use of the land for agricultural production." <strong>No water purpose.</strong> The assessor could require a land-management plan, and land lost the farm rate if the owner didn't follow it.</td>
+<td>Water purposes were added: fallowing "during periods of limited water supply," as prudent farm management, or "to facilitate voluntary participation in a water management or agricultural water optimization program." The owner <em>may</em> notify the assessor. The plan applies only if the owner plans to fallow the next year, and can't be required again for three years. Kyle himself was listed as the substitute sponsor.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 491 (2023), GSL Commissioner</td>
+<td><strong>$40,000,000</strong> for the lake fund.</td>
+<td><strong>$10,000,000.</strong> The Hive's case file also documents water rights carved out and a new GRAMA exemption added.</td>
+<td>Yea both times</td>
+</tr>
+<tr>
+<td>HB 453 (2024), GSL Revisions</td>
+<td>Mineral companies on the lake faced <strong>production limits</strong> and loss of rights for not using them.</td>
+<td>The words "production limit" no longer appear in the final text. They were replaced with <strong>voluntary agreements</strong> ("voluntary" appears 5 times as introduced and 12 times in the final). The severance tax increase stayed.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 243 (2024), Riparian</td>
+<td>Required <strong>every city and county general plan to include a riparian (streamside) element</strong>, plus zoning ties, a state riparian map, technical help, and a state riparian position.</td>
+<td>Cut down to just a temporary state riparian position and published information. <strong>Even the cut-down version failed, 35-36.</strong></td>
+<td><strong>Nay</strong> on the cut-down version</td>
+</tr>
+<tr>
+<td>HB 11 (2024), Water Efficient Landscaping</td>
+<td>Restricted <strong>lawn and turf</strong> at certain government properties.</td>
+<td>Narrowed to restricting only <strong>overhead spray irrigation</strong> on those properties.</td>
+<td><strong>Nay</strong> on both votes, even after it was narrowed</td>
+</tr>
+<tr>
+<td>HB 280 (2024), Water Related Changes</td>
+<td>Required the Board of Water Resources to <strong>impose a water use fee</strong>, among other changes.</td>
+<td>The required water-use fee was dropped, and $2.5M was added for the Water Infrastructure Fund.</td>
+<td><strong>Nay</strong> on the House vote; Yea on concurrence</td>
+</tr>
+<tr>
+<td>SB 118 (2023), Water Efficient Use</td>
+<td>No money. Included liens if someone removed water-efficient landscaping they were paid to install.</td>
+<td><strong>$3,000,000</strong> added. The lien provision was dropped.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 349 (2023), Water Reuse</td>
+<td>Barred approval of water-reuse projects that would harm the Great Salt Lake.</td>
+<td>Narrowed to "certain" water-reuse projects, with water replacement plans added.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>SB 277 (2023), Water Conservation and Augmentation</td>
+<td>$200,000,000 plus $125,000,000.</td>
+<td>$170,000,000 plus $30,000,000 plus $125,000,000, plus new $5M, $50M, and $5M items. The money was split up and more was added.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>SB 270 (2024), Utah Lake Study</td>
+<td>Required a study <strong>and an implementation plan</strong>.</td>
+<td>The implementation plan was dropped; it became a study only.</td>
+<td><strong>Nay</strong></td>
+</tr>
+<tr>
+<td>SB 195 (2024), Golf Courses</td>
+<td>Created a golf advisory board.</td>
+<td>The board was dropped; a master plan for state golf courses was added. The <strong>secret golf-water-data provision stayed</strong>.</td>
+<td><strong>Nay</strong></td>
+</tr>
+<tr>
+<td><strong>HB 311 (2025), Watershed Amendments</strong></td>
+<td>"Water loss and water quality issues in watersheds": the state engineer could order <strong>repair of hydroelectric facilities to prevent waste, loss, pollution, or contamination of waters</strong>, and owners would carry liability.</td>
+<td><strong>A different bill under the same number.</strong> It now covers whether <strong>water commissioners</strong> are full-time employees with benefits. "Hydroelectric" appears 9 times as introduced and <strong>0 times</strong> in the final.</td>
+<td>Yea both times</td>
+</tr>
+<tr>
+<td>HB 378 (2026), Fugitive Dust</td>
+<td>Facilities with violations had to <strong>submit to increased inspections</strong>.</td>
+<td>The increased-inspection requirement was dropped. The Hive's Bill-Tracker grade is D.</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 410 (2026), Water Leasing</td>
+<td>$5,000,000, with a two-of-five-years limit on taking water off farmland in the general leasing section.</td>
+<td><strong>$2,750,000</strong>, and that limit was removed (Hive case file).</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 509 (2026), Wetlands</td>
+<td>"Wetlands <strong>Protection</strong> Modifications": a statewide study with an acreage baseline, species and recreation impacts, improve/mitigate recommendations, and an in-lieu fee study.</td>
+<td>"Wetlands <strong>Study</strong> Amendments": large counties only, with the baseline, the species and recreation pieces, the improve/mitigate language, and the fee study all removed (Hive case file).</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 76 (2026), Data Center Water Transparency</td>
+<td>Public, facility-level water-use data.</td>
+<td>A late substitute let operators claim the data as proprietary, so only anonymized county totals are public (Hive case file).</td>
+<td>Yea, including on the concurrence vote after the change</td>
+</tr>
+<tr>
+<td>SB 225 (2026), Inland Port water</td>
+<td>A 200,000-gallon/day cap on tax-incentivized development, in Salt Lake City only.</td>
+<td>The cap was dropped for local water-provider discretion, and the rule was extended statewide (Hive case file).</td>
+<td>Yea on the first vote, then <strong>Nay</strong> on the final vote</td>
+</tr>
+<tr>
+<td>HB 349 (2026), Statewide Water Storage</td>
+<td>Real loans from the Water Infrastructure account.</td>
+<td>A nonbinding recommendation process, then killed at 11:59 p.m. (Hive case file).</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HCR 9 (2026)</td>
+<td>A <strong>national-debt</strong> resolution.</td>
+<td>A <strong>Great Salt Lake</strong> resolution under the same number (Hive case file).</td>
+<td>Yea</td>
+</tr>
+<tr>
+<td>HB 157 / HB 125 (2026)</td>
+<td>$5M for DNR water litigation, in HB 157.</td>
+<td>The money was moved into HB 125 (introduced as an aquatic invasive species bill), then stripped six hours later (Hive case file).</td>
+<td>Yea on both</td>
+</tr>
+<tr>
+<td>SB 254 (2026)</td>
+<td>"Critical Minerals Amendments."</td>
+<td>Retitled "Extracted Natural Resources Amendments." About $37M in appropriations was added. (The retitle is from the Hive case file; the money is from the enrolled text.)</td>
+<td>Yea</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Bills with no meaningful change between introduced and final</h3>
+<p>These bills passed in close to their introduced form:
+- <strong>2024:</strong> HB 61, SB 77, HB 295, HB 42, and HB 62. HB 448 and HJR 27 were never changed.
+- <strong>2025:</strong> HB 446, HB 243, HB 274, HB 285, HB 174, HB 478, HB 368, and HB 328, which was never changed.
+- <strong>2026:</strong> HB 296, HB 60, HJR 30, and HB 187. HB 60's harm was in its original text (Hive grade F).</p>
+<p><strong>What this shows about Kyle:</strong> Most of his No votes were on bills that had <strong>already been weakened</strong> before he voted. Examples:
+- HB 243 had been cut from a general-plan requirement to a single temporary position.
+- HB 11 had been cut from lawn limits to spray limits only.</p>
+<p>He still voted no. On the other side, he voted yes on final versions that had been <strong>cut down or swapped</strong>: HB 491, HB 453, HB 311, HB 410, HB 509, HB 76, HB 378, HCR 9, and HB 157/125.</p>
+<hr />
+<h2>Bottom line for the collective</h2>
+<ul>
+<li><strong>Big lake bills:</strong> he voted yes on all of them (HB 491, HB 513, HB 453, HB 446, HB 410, HB 348, HB 247). That part of his claim holds. Some of those bills already carry Hive grades of C, D or F for how they were written. Those grades are about the bill, not about him.</li>
+<li><strong>Everyday water-saving rules:</strong> he voted no again and again. That includes spray-irrigation limits (2024, 2025, 2026), the riparian bill, the GSL commissioner's conservation study (the only no), saved-water protection, metering and tiered-rate fees, and counting water given to the lake. These are the cheapest, fastest ways cities and farms save water for the lake.</li>
+<li><strong>The three bills he named in his comment:</strong></li>
+<li>Data-center water disclosure (HB 76): Hive F. He voted yes even after facility data was made private.</li>
+<li>Incentives (HB 507): Hive C−.</li>
+<li>Ratepayer protection (SB 132): new grade C.</li>
+<li><strong>His own bill (HB 520):</strong> a real but small help to farmers. It moves no water to the lake.</li>
+</ul>
+<h2>Amendment B money: the Yes side (as of Oct. 25, 2026)</h2>
+<ul>
+<li><strong>Taxpayer Shield PAC.</strong> The chairman is Sen. Lincoln Fillmore, primary sponsor of S.J.R. 2. Its folder on disclosures.utah.gov shows one filed report (2026 Primary): a $2,000 loan from Brian Chapman and $1,812.66 spent. Of that, $1,050 went to UTGOP for advertising, plus BIVIO and BCR Political. <strong>No Amendment B spending.</strong> No September 30th report is listed, and its 2026 Received Contributions Report shows $0.00. Read through Chrome on 10/25/26.</li>
+<li><strong>Americans for Prosperity–Utah.</strong> This is the state chapter of a national group. It paid for a statewide pro-B "tax monster" mailer and planned digital ads (FOX 13, Oct. 9, 2026). <strong>No Utah committee filing for it has been found</strong>, so the amount is not public.</li>
+<li><strong>Utah Taxpayers Association.</strong> It is a 501(c)(4), so its donors are not public. Its president is Billy Hesterman, who wrote the Deseret News op-ed "Amendment B will protect Utah taxpayers, vote yes" (Oct. 22, 2026). The Association's PAC is funded by corporations and trade groups, including Rocky Mountain Power, Intermountain Power, Dominion, Enbridge, Chevron, banks and credit unions, and Deer Valley. It has reported no Amendment B spending. It gave Kyle $200.</li>
+<li><strong>No registered Yes-on-B issues committee was found</strong> (searched 10/10/26). The Hive was unable to search again on 10/25 because the site's autocomplete would not load.</li>
+</ul>
+</section>
+
+<section class="data">
+<h2 id="at-a-glance">Other ways to see the same records</h2>
+<p>Everything below comes from the same 64 votes in the report above. It is the same information, shown as a count, a chart, side-by-side cards and a searchable list.</p>
+<h3>At a glance: what his 64 votes meant for the collective</h3>
+<div class="tiles"><div class="tile" style="border-top:6px solid #1d6b57"><div class="tn">22</div><div class="tl">With the collective</div></div><div class="tile" style="border-top:6px solid #b42318"><div class="tn">16</div><div class="tl">Against the collective</div></div><div class="tile" style="border-top:6px solid #b7791f"><div class="tn">4</div><div class="tl">Mixed</div></div><div class="tile" style="border-top:6px solid #6b7280"><div class="tn">22</div><div class="tl">Little effect</div></div></div>
+<h3>By year</h3>
+<div class="legend"><span class="lg"><i style="background:#1d6b57"></i>With the collective</span><span class="lg"><i style="background:#b42318"></i>Against the collective</span><span class="lg"><i style="background:#b7791f"></i>Mixed</span><span class="lg"><i style="background:#6b7280"></i>Little effect</span></div>
+<div class="yrow"><div class="ylab">2023</div><div class="ytrack"><span class="seg" style="width:18.18%;background:#1d6b57" title="With the collective: 4">4</span><span class="seg" style="width:4.55%;background:#b42318" title="Against the collective: 1">1</span><span class="seg" style="width:0.00%;background:#b7791f" title="Mixed: 0"></span><span class="seg" style="width:22.73%;background:#6b7280" title="Little effect: 5">5</span></div></div><div class="yrow"><div class="ylab">2024</div><div class="ytrack"><span class="seg" style="width:36.36%;background:#1d6b57" title="With the collective: 8">8</span><span class="seg" style="width:18.18%;background:#b42318" title="Against the collective: 4">4</span><span class="seg" style="width:0.00%;background:#b7791f" title="Mixed: 0"></span><span class="seg" style="width:45.45%;background:#6b7280" title="Little effect: 10">10</span></div></div><div class="yrow"><div class="ylab">2025</div><div class="ytrack"><span class="seg" style="width:27.27%;background:#1d6b57" title="With the collective: 6">6</span><span class="seg" style="width:9.09%;background:#b42318" title="Against the collective: 2">2</span><span class="seg" style="width:9.09%;background:#b7791f" title="Mixed: 2">2</span><span class="seg" style="width:13.64%;background:#6b7280" title="Little effect: 3">3</span></div></div><div class="yrow"><div class="ylab">2026</div><div class="ytrack"><span class="seg" style="width:18.18%;background:#1d6b57" title="With the collective: 4">4</span><span class="seg" style="width:40.91%;background:#b42318" title="Against the collective: 9">9</span><span class="seg" style="width:9.09%;background:#b7791f" title="Mixed: 2">2</span><span class="seg" style="width:18.18%;background:#6b7280" title="Little effect: 4">4</span></div></div>
+<p class="note">Each bar is one year. Each colored block is the number of votes in that group. "Little effect" means the bill was housekeeping, symbolic, or graded C.</p>
+
+<h3>Every bill he voted NO on</h3>
+<ul><li><b>2024 SB 18</b>, Water Modifications (saved water): <span style="color:#b42318;font-weight:700">Against the collective</span>. One of 3 no votes against protecting conserved water from being lost.</li><li><b>2024 HB 280</b>, Water Related Changes: <span style="color:#6b7280;font-weight:700">Little effect</span>. Planning and study; record does not say why he switched.</li><li><b>2024 HB 11</b>, Water Efficient Landscaping: <span style="color:#b42318;font-weight:700">Against the collective</span>. Voted twice against limiting spray watering on government grounds.</li><li><b>2024 SB 270</b>, Utah Lake and Great Salt Lake Study: <span style="color:#6b7280;font-weight:700">Little effect</span>. Lone no on a $1.5M Utah Lake study.</li><li><b>2024 HB 472</b>, Water Revisions (database study): <span style="color:#6b7280;font-weight:700">Little effect</span>. Ended up supporting it.</li><li><b>2024 HB 243</b>, Riparian Amendments: <span style="color:#b42318;font-weight:700">Against the collective</span>. Against protecting streams that feed the lake.</li><li><b>2024 HB 535</b>, Water Conservation Modifications: <span style="color:#b42318;font-weight:700">Against the collective</span>. Only House member against a public study of saving city water for the lake.</li><li><b>2024 SB 195</b>, Golf Course Amendments: <span style="color:#1d6b57;font-weight:700">With the collective</span>. Against making golf-course water data secret.</li><li><b>2025 HB 328</b>, Water Usage Amendments (spray irrigation): <span style="color:#b42318;font-weight:700">Against the collective</span>. Against limiting spray watering in new building.</li><li><b>2025 SB 80</b>, Water Fee Amendments: <span style="color:#b42318;font-weight:700">Against the collective</span>. One of 7 no votes against fees that reward meters and tiered rates.</li><li><b>2025 HB 368</b>, Local Land Use Amendments: <span style="color:#1d6b57;font-weight:700">With the collective</span>. No vote kept cities&#x27; water-wise landscaping tools.</li><li><b>2026 HB 296</b>, Water Commitment (count water given to the lake): <span style="color:#b42318;font-weight:700">Against the collective</span>. Against crediting water sent to the lake.</li><li><b>2026 HB 328</b>, Water Usage Modifications (spray irrigation): <span style="color:#b42318;font-weight:700">Against the collective</span>. Second year against limiting spray watering.</li><li><b>2026 SB 225</b>, Inland Port water standard: <span style="color:#b7791f;font-weight:700">Mixed</span>. Yes on the first vote, no on the final.</li></ul>
+
+<h3 id="started-ended">How the bills started vs. how they ended</h3>
+<p>Bills often change a lot between the first version and the last. These are the ones where the change matters, with how he voted on the version that came to the floor.</p>
+<div class="sc"><div class="sch">2023 HB 491 <span class="scsub">Amendments Related to the Great Salt Lake</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>$40,000,000 for the lake fund</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>$10,000,000; water rights carved out; new GRAMA exemption</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade F</div></div><div class="sc"><div class="sch">2023 SB 277 <span class="scsub">Water Conservation and Augmentation</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>$200M + $125M</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>$170M + $30M + $125M + $5M + $50M + $5M</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade C</div></div><div class="sc"><div class="sch">2023 SB 118 <span class="scsub">Water Efficient Use</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>No money; liens if paid-for landscaping was removed</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>$3,000,000 added; lien provision dropped</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade B</div></div><div class="sc"><div class="sch">2023 HB 349 <span class="scsub">Water Reuse Projects</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Barred reuse projects that harm the lake</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Narrowed to &quot;certain&quot; projects; replacement plans added</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade B</div></div><div class="sc"><div class="sch">2024 HB 520 <span class="scsub">Fallow Land Amendments (KYLE&#x27;S BILL)</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Fallowing only &quot;to facilitate land recovery&quot;; no water purpose</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Water purposes added in his own substitute (limited water supply, voluntary water programs)</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade C+</div></div><div class="sc"><div class="sch">2024 HB 453 <span class="scsub">Great Salt Lake Revisions</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Production limits on lake mineral companies</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Production limits dropped; voluntary agreements instead</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade B</div></div><div class="sc"><div class="sch">2024 HB 280 <span class="scsub">Water Related Changes</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Required a state water-use fee</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Fee dropped; $2.5M added</div></div></div>
+<div class="scv">Kyle's vote: <b>Nay, then Yea</b> · Grade C</div></div><div class="sc"><div class="sch">2024 HB 11 <span class="scsub">Water Efficient Landscaping</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Limited lawn/turf at government properties</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Narrowed to spray irrigation only</div></div></div>
+<div class="scv">Kyle's vote: <b>Nay</b> · Grade B</div></div><div class="sc"><div class="sch">2024 SB 270 <span class="scsub">Utah Lake and Great Salt Lake Study</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Study plus implementation plan</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Study only</div></div></div>
+<div class="scv">Kyle's vote: <b>Nay (only no)</b> · Grade C</div></div><div class="sc"><div class="sch">2024 HB 243 <span class="scsub">Riparian Amendments</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Every city and county plan must cover riparian areas; map; state position</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Only a temporary state position and information</div></div></div>
+<div class="scv">Kyle's vote: <b>Nay</b> · Grade B</div></div><div class="sc"><div class="sch">2024 SB 195 <span class="scsub">Golf Course Amendments</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Golf advisory board; secret golf water data</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Board dropped; secrecy stayed</div></div></div>
+<div class="scv">Kyle's vote: <b>Nay</b> · Grade D</div></div><div class="sc"><div class="sch">2025 HB 311 <span class="scsub">Watershed Amendments</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Dam/hydro owners must prevent water loss and pollution</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Different bill: water commissioner employment rules</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade C</div></div><div class="sc"><div class="sch">2026 HB 410 <span class="scsub">Water Leasing</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>$5,000,000; farmland safeguard</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>$2,750,000; safeguard removed</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade C</div></div><div class="sc"><div class="sch">2026 HCR 9 <span class="scsub">Great Salt Lake resolution</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>A national-debt resolution</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>A Great Salt Lake resolution</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade D</div></div><div class="sc"><div class="sch">2026 HB 76 <span class="scsub">Data Center Water Transparency</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Public facility-level water data</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Operators can keep it private; county totals only</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade F</div></div><div class="sc"><div class="sch">2026 SB 225 <span class="scsub">Inland Port water standard</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>200,000-gal/day cap, Salt Lake City only</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Cap dropped; statewide; local discretion</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea, then Nay</b> · Grade D</div></div><div class="sc"><div class="sch">2026 HB 509 <span class="scsub">Wetlands Study</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>&quot;Wetlands Protection&quot;: baseline, species, mitigation</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>&quot;Wetlands Study&quot;: large counties only</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade F</div></div><div class="sc"><div class="sch">2026 HB 378 <span class="scsub">Fugitive Dust</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Violators get increased inspections</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Increased inspections dropped</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade D</div></div><div class="sc"><div class="sch">2026 HB 349 <span class="scsub">Statewide Water Storage</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>Real loans</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Nonbinding recommendations</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade B</div></div><div class="sc"><div class="sch">2026 SB 254 <span class="scsub">Extracted Natural Resources</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>&quot;Critical Minerals Amendments&quot;</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Retitled; about $37M added</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade D</div></div><div class="sc"><div class="sch">2026 HB 157 / HB 125 <span class="scsub">Water litigation money</span></div>
+<div class="scg"><div><div class="sct">How it started</div><div>$5M for water litigation</div></div><div class="arrow" aria-hidden="true">→</div><div><div class="sct">How it ended</div><div>Moved, then stripped</div></div></div>
+<div class="scv">Kyle's vote: <b>Yea</b> · Grade F</div></div>
+
+<h3 id="explore">Search every vote</h3>
+<div class="filters">
+<label>Year<select id="fy"><option value="">All years</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></label>
+<label>What his vote meant<select id="fm"><option value="">All</option><option>With the collective</option><option>Against the collective</option><option>Mixed</option><option>Little effect</option></select></label>
+<label>His vote<select id="fv"><option value="">All</option><option>Yea</option><option>Nay</option><option>Absent</option></select></label>
+<label>Search<input id="fq" type="search" placeholder="Bill, title or sponsor"></label>
+</div>
+<div id="count"></div>
+<div class="tw"><table><thead><tr><th>Year</th><th>Bill</th><th>Grade</th><th>His vote</th><th>House vote</th><th>Result</th><th>What it meant</th></tr></thead><tbody id="tb"></tbody></table></div>
+
+<h3 id="download">Download the data</h3>
+<p>The same records, free to use and share. Please credit The Weber County Hive.</p>
+<a class="btn" href="kyle-gsl-votes-2023-2026.csv" download>Download spreadsheet (CSV)</a>
+<a class="btn" href="kyle-gsl-votes-2023-2026.json" download>Download data (JSON)</a>
+</section>
+
+<details class="sources"><summary>Sources</summary><ul>
+<li><a href="https://le.utah.gov/" target="_blank" rel="noopener">Utah Legislature bill pages and House roll calls (le.utah.gov)</a></li>
+<li><a href="https://le.utah.gov/~2024/bills/static/HB0520.html" target="_blank" rel="noopener">Utah Legislature 2024 H.B. 520 Fallow Land Amendments</a></li>
+<li><a href="https://house.utleg.gov/2026-utah-data-center-regulations/" target="_blank" rel="noopener">Utah House Majority: 2026 Utah Data Center Laws (Oct. 1, 2026)</a></li>
+<li><a href="https://utahnewsdispatch.com/?p=19473" target="_blank" rel="noopener">Utah News Dispatch / UIJP: Utah can't say how much it's losing from data center tax break (Aug. 31, 2026)</a></li>
+<li><a href="https://utahnewsdispatch.com/2025/03/25/changes-to-rocky-mountain-power-contracts-with-ai-centers/" target="_blank" rel="noopener">Utah News Dispatch: Changes coming to Rocky Mountain Power's contracts with AI centers (Mar. 25, 2025)</a></li>
+<li><a href="https://www.upr.org/politics/2026-03-17/how-utahs-2026-legislative-session-reshaped-water-policy" target="_blank" rel="noopener">UPR: How Utah's 2026 legislative session reshaped water policy (Mar. 17, 2026)</a></li>
+<li><a href="https://www.law.utah.edu/news-articles/great-salt-lake-legislative-update-feb-27-2024/" target="_blank" rel="noopener">S.J. Quinney College of Law: Great Salt Lake legislative update, Feb. 27, 2024</a></li>
+<li><a href="https://www.law.utah.edu/news-articles/great-salt-lake-legislative-update-march-5-2025/" target="_blank" rel="noopener">S.J. Quinney College of Law: Great Salt Lake legislative update, Mar. 5, 2025</a></li>
+<li><a href="https://www.uphe.org/2025/03/25/great-salt-lake-legislative-recap/" target="_blank" rel="noopener">UPHE: Great Salt Lake legislative recap (Mar. 25, 2025)</a></li>
+<li><a href="https://greatsaltlake.utah.gov/legislation/" target="_blank" rel="noopener">Great Salt Lake legislation list (greatsaltlake.utah.gov)</a></li>
+<li><a href="https://www.fox13now.com/news/politics/the-battle-has-begun-over-utahs-amendment-b-on-your-ballot" target="_blank" rel="noopener">FOX 13: The battle has begun over Utah's Amendment B (Oct. 9, 2026)</a></li>
+<li><a href="https://www.deseret.com/opinion/2026/10/22/amendment-b-protects-utah-taxpayers/" target="_blank" rel="noopener">Deseret News: Amendment B will protect Utah taxpayers, vote yes, by Billy Hesterman (Oct. 22, 2026)</a></li>
+<li><a href="https://www.sltrib.com/news/politics/2026/10/12/jason-b-kyle-faces-kim-james-libby/" target="_blank" rel="noopener">Salt Lake Tribune: House District 8 election (Oct. 12, 2026)</a></li>
+<li><a href="https://www.onpointpolitics.us/forecast/measures/ut/amendment-b" target="_blank" rel="noopener">OnPoint Politics: Utah Amendment B forecast and Noble Predictive Insights poll</a></li>
+<li><a href="https://disclosures.utah.gov/" target="_blank" rel="noopener">Utah Lieutenant Governor campaign disclosures (Taxpayer Shield PAC; Utahns Protecting Our Constitution)</a></li>
+<li><a href="https://weber-county-hive.github.io/Bill-Tracker/" target="_blank" rel="noopener">The Weber County Hive Bill-Tracker (water, land and local power bills)</a></li>
+<li><a href="https://weber-county-hive.github.io/Great-Salt-Lake/" target="_blank" rel="noopener">The Weber County Hive Great Salt Lake case files</a></li>
+<li><a href="https://weber-county-hive.github.io/candidates2026/jason-kyle-hd8.html" target="_blank" rel="noopener">The Weber County Hive HD8 case file (Kyle, James, Shelton)</a></li>
+</ul><p class="note">Votes were read from each bill's House roll call on le.utah.gov on Oct. 25, 2026. Grades marked "Hive grade" were already published on Hive pages and are kept as published. Grades marked "new grade" are first grades written from each bill's official summary of provisions, not a full read of the bill text.</p></details>
+</main>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent &middot; Accountability &middot; Journalism</span></div>
+<script>
+const D=[{"year": 2023, "bill": "HB 491", "title": "Amendments Related to the Great Salt Lake", "sponsor": "Schultz", "grade": "F", "gsrc": "Hive", "vote": "Yea", "tally": "73-0-2; concur 73-0-2", "result": "Signed", "meant": "Against the collective", "why": "Backed the version that cut lake money and added a records exemption.", "started": "$40,000,000 for the lake fund", "ended": "$10,000,000; water rights carved out; new GRAMA exemption"}, {"year": 2023, "bill": "HB 513", "title": "Great Salt Lake Amendments", "sponsor": "Snider", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "68-0-7; concur 69-0-6", "result": "Signed", "meant": "With the collective", "why": "Mineral royalties go to the Great Salt Lake Account.", "started": "", "ended": ""}, {"year": 2023, "bill": "HCR 7", "title": "Sentinel Landscape resolution", "sponsor": "Lee", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "69-1-5", "result": "Signed", "meant": "Little effect", "why": "Nonbinding resolution.", "started": "", "ended": ""}, {"year": 2023, "bill": "HB 307", "title": "Utah Water Ways", "sponsor": "Musselman", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "71-0-4", "result": "Signed", "meant": "Little effect", "why": "Water-conservation education partnership.", "started": "", "ended": ""}, {"year": 2023, "bill": "SB 277", "title": "Water Conservation and Augmentation", "sponsor": "Sandall", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "72-0-3", "result": "Signed", "meant": "Little effect", "why": "Funding rules; effect depends on spending.", "started": "$200M + $125M", "ended": "$170M + $30M + $125M + $5M + $50M + $5M"}, {"year": 2023, "bill": "SB 118", "title": "Water Efficient Use", "sponsor": "Sandall", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "60-12-3", "result": "Signed", "meant": "With the collective", "why": "Grants for paying people to use less water.", "started": "No money; liens if paid-for landscaping was removed", "ended": "$3,000,000 added; lien provision dropped"}, {"year": 2023, "bill": "HB 349", "title": "Water Reuse Projects", "sponsor": "Snider", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "71-0-4; 70-0-5", "result": "Signed", "meant": "With the collective", "why": "Bars reuse projects that harm the lake.", "started": "Barred reuse projects that harm the lake", "ended": "Narrowed to \"certain\" projects; replacement plans added"}, {"year": 2023, "bill": "HB 450", "title": "Landscaping Requirements", "sponsor": "Wilcox", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "65-1-9; 70-1-4", "result": "Signed", "meant": "With the collective", "why": "Lets local governments set water-wise landscaping rules.", "started": "", "ended": ""}, {"year": 2023, "bill": "HB 137", "title": "Brine shrimp as state crustacean", "sponsor": "Lesser", "grade": "—", "gsrc": "not graded", "vote": "Yea", "tally": "45-24-6", "result": "Signed", "meant": "Little effect", "why": "Symbolic.", "started": "", "ended": ""}, {"year": 2023, "bill": "HB 220", "title": "Emissions Reduction", "sponsor": "Stoddard", "grade": "C+", "gsrc": "new", "vote": "Yea", "tally": "73-0-2", "result": "Signed", "meant": "Little effect", "why": "Emissions inventory and plan.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 520", "title": "Fallow Land Amendments (KYLE'S BILL)", "sponsor": "Kyle", "grade": "C+", "gsrc": "new", "vote": "Yea", "tally": "72-0-3; concur 72-0-3", "result": "Signed", "meant": "With the collective", "why": "Removes a tax penalty for fallowing. Moves no water to the lake; no public report.", "started": "Fallowing only \"to facilitate land recovery\"; no water purpose", "ended": "Water purposes added in his own substitute (limited water supply, voluntary water programs)"}, {"year": 2024, "bill": "HB 453", "title": "Great Salt Lake Revisions", "sponsor": "Snider", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "73-0-2", "result": "Signed", "meant": "With the collective", "why": "Raised the mineral severance tax on the lake.", "started": "Production limits on lake mineral companies", "ended": "Production limits dropped; voluntary agreements instead"}, {"year": 2024, "bill": "SB 18", "title": "Water Modifications (saved water)", "sponsor": "Sandall", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "66-3-6", "result": "Signed", "meant": "Against the collective", "why": "One of 3 no votes against protecting conserved water from being lost.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 280", "title": "Water Related Changes", "sponsor": "Snider", "grade": "C", "gsrc": "new", "vote": "Nay, then Yea", "tally": "63-5-7; concur 71-3-1", "result": "Signed", "meant": "Little effect", "why": "Planning and study; record does not say why he switched.", "started": "Required a state water-use fee", "ended": "Fee dropped; $2.5M added"}, {"year": 2024, "bill": "HB 275", "title": "Water Amendments", "sponsor": "Snider", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "68-0-7; 70-0-5", "result": "Signed", "meant": "With the collective", "why": "Water-wise yards in HOAs; better data.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 61", "title": "Water Measuring and Accounting", "sponsor": "Albrecht", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "72-1-2", "result": "Signed", "meant": "With the collective", "why": "Remote water measuring.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 11", "title": "Water Efficient Landscaping", "sponsor": "Owens", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "51-22-2; concur 59-12-4", "result": "Signed", "meant": "Against the collective", "why": "Voted twice against limiting spray watering on government grounds.", "started": "Limited lawn/turf at government properties", "ended": "Narrowed to spray irrigation only"}, {"year": 2024, "bill": "SB 211", "title": "Generational Water Infrastructure", "sponsor": "Adams", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "70-4-1", "result": "Signed", "meant": "Little effect", "why": "New council for big water projects.", "started": "", "ended": ""}, {"year": 2024, "bill": "SB 270", "title": "Utah Lake and Great Salt Lake Study", "sponsor": "Bramble", "grade": "C", "gsrc": "new", "vote": "Nay (only no)", "tally": "71-1-3", "result": "Signed", "meant": "Little effect", "why": "Lone no on a $1.5M Utah Lake study.", "started": "Study plus implementation plan", "ended": "Study only"}, {"year": 2024, "bill": "SB 242", "title": "Utah Lake Modifications", "sponsor": "McKell", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "66-2-7", "result": "Signed", "meant": "With the collective", "why": "Ended the Utah Lake island-building plan.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 448", "title": "State Water Program Reporting", "sponsor": "Ward", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "65-5-5", "result": "Died in Senate", "meant": "With the collective", "why": "Supported reporting.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 472", "title": "Water Revisions (database study)", "sponsor": "King", "grade": "C+", "gsrc": "new", "vote": "Nay, then Yea", "tally": "failed 34-31-10; passed 64-3-8", "result": "Died in Senate", "meant": "Little effect", "why": "Ended up supporting it.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 243", "title": "Riparian Amendments", "sponsor": "Bennion", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "FAILED 35-36-4", "result": "Died", "meant": "Against the collective", "why": "Against protecting streams that feed the lake.", "started": "Every city and county plan must cover riparian areas; map; state position", "ended": "Only a temporary state position and information"}, {"year": 2024, "bill": "HB 535", "title": "Water Conservation Modifications", "sponsor": "Kohler", "grade": "B", "gsrc": "new", "vote": "Nay (only no)", "tally": "70-1-4", "result": "Died in Senate", "meant": "Against the collective", "why": "Only House member against a public study of saving city water for the lake.", "started": "", "ended": ""}, {"year": 2024, "bill": "SB 77", "title": "Water Rights Restricted Account", "sponsor": "Sandall", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "68-5-2", "result": "Signed", "meant": "Little effect", "why": "Housekeeping.", "started": "", "ended": ""}, {"year": 2024, "bill": "SB 125", "title": "Secondary Water", "sponsor": "Hinkins", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "71-0-4", "result": "Signed", "meant": "With the collective", "why": "Supported metering.", "started": "", "ended": ""}, {"year": 2024, "bill": "HJR 27", "title": "Water-efficient landscaping resolution", "sponsor": "Owens", "grade": "C+", "gsrc": "new", "vote": "Yea", "tally": "63-6-6", "result": "Died in Senate", "meant": "Little effect", "why": "Nonbinding.", "started": "", "ended": ""}, {"year": 2024, "bill": "HCR 11", "title": "Growth impacts resolution", "sponsor": "Bolinder", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "68-1-6", "result": "Signed", "meant": "Little effect", "why": "Nonbinding.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 62", "title": "Utah Water Ways Amendments", "sponsor": "Owens", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "65-8-2", "result": "Signed", "meant": "Little effect", "why": "Water education.", "started": "", "ended": ""}, {"year": 2024, "bill": "SB 195", "title": "Golf Course Amendments", "sponsor": "McCay", "grade": "D", "gsrc": "new", "vote": "Nay", "tally": "FAILED 17-49-9", "result": "Died", "meant": "With the collective", "why": "Against making golf-course water data secret.", "started": "Golf advisory board; secret golf water data", "ended": "Board dropped; secrecy stayed"}, {"year": 2024, "bill": "HB 42", "title": "Water Rights Publication", "sponsor": "Briscoe", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "72-0-3", "result": "Signed", "meant": "Little effect", "why": "Housekeeping.", "started": "", "ended": ""}, {"year": 2024, "bill": "HB 295", "title": "Produced Water", "sponsor": "Lund", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "73-0-2", "result": "Signed", "meant": "Little effect", "why": "Oil-field water rules.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 446", "title": "Great Salt Lake Amendments", "sponsor": "Koford", "grade": "C+", "gsrc": "new", "vote": "Yea", "tally": "66-0-9", "result": "Signed", "meant": "Mixed", "why": "More water-buying power for the lake, with procurement rules waived.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 520", "title": "Water Entity Amendments", "sponsor": "Snider", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "70-0-5; 69-0-6", "result": "Signed", "meant": "Mixed", "why": "Conflict penalty added; Trust Council less visible.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 243", "title": "Agricultural Water Optimization", "sponsor": "Shallenberger", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "66-0-9", "result": "Signed", "meant": "With the collective", "why": "Measurable farm water savings.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 274", "title": "Water Amendments (conservation rates)", "sponsor": "Snider", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "67-2-6; 60-9-6", "result": "Signed", "meant": "With the collective", "why": "Water pricing that rewards conserving.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 244", "title": "Wildlife Management Area (Bear River Bay)", "sponsor": "Snider", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "67-0-8", "result": "Signed", "meant": "With the collective", "why": "13,000-acre waterfowl area; loosens Willard Spur limits.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 311", "title": "Watershed Amendments", "sponsor": "Snider", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "68-0-7; 69-0-6", "result": "Signed", "meant": "Little effect", "why": "Final bill is about water commissioners' jobs.", "started": "Dam/hydro owners must prevent water loss and pollution", "ended": "Different bill: water commissioner employment rules"}, {"year": 2025, "bill": "SB 132", "title": "Electric Utility Amendments (large loads)", "sponsor": "Sandall", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "71-0-4", "result": "Signed", "meant": "With the collective", "why": "Keeps data-center power costs off household bills.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 328", "title": "Water Usage Amendments (spray irrigation)", "sponsor": "Owens", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "FAILED 32-36-7", "result": "Died", "meant": "Against the collective", "why": "Against limiting spray watering in new building.", "started": "", "ended": ""}, {"year": 2025, "bill": "SB 80", "title": "Water Fee Amendments", "sponsor": "Sandall", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "62-7-6", "result": "Signed", "meant": "Against the collective", "why": "One of 7 no votes against fees that reward meters and tiered rates.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 368", "title": "Local Land Use Amendments", "sponsor": "Whyte", "grade": "D", "gsrc": "new", "vote": "Absent; then Nay", "tally": "53-13-9; concur 47-22-6", "result": "Passed", "meant": "With the collective", "why": "No vote kept cities' water-wise landscaping tools.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 478", "title": "Brine Mining", "sponsor": "Bolinder", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "69-0-6; 68-1-6", "result": "Signed", "meant": "Little effect", "why": "Mostly outside the lake basin.", "started": "", "ended": ""}, {"year": 2025, "bill": "HB 499", "title": "DEQ Amendments", "sponsor": "Snider", "grade": "C−", "gsrc": "new", "vote": "Yea", "tally": "56-13-6", "result": "Died", "meant": "Little effect", "why": "Air Quality Board changes.", "started": "", "ended": ""}, {"year": 2025, "bill": "SB 36", "title": "Water Quality Board", "sponsor": "Weiler", "grade": "B−", "gsrc": "new", "vote": "Yea", "tally": "63-0-12", "result": "Signed", "meant": "With the collective", "why": "Enforcement process.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 410", "title": "Water Leasing", "sponsor": "Koford", "grade": "C", "gsrc": "Hive", "vote": "Yea", "tally": "69-1-5", "result": "Signed", "meant": "With the collective", "why": "The main 2026 lake water program.", "started": "$5,000,000; farmland safeguard", "ended": "$2,750,000; safeguard removed"}, {"year": 2026, "bill": "HB 348", "title": "Dedicated Water", "sponsor": "Koford", "grade": "C", "gsrc": "Hive", "vote": "Yea", "tally": "70-0-5", "result": "Signed", "meant": "With the collective", "why": "Lets water be dedicated to the lake.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 247", "title": "Great Salt Lake Related Amendments", "sponsor": "Ward", "grade": "B", "gsrc": "new", "vote": "Yea", "tally": "71-0-4; 67-0-8", "result": "Signed", "meant": "With the collective", "why": "Brine shrimp money funds lake work.", "started": "", "ended": ""}, {"year": 2026, "bill": "HCR 9", "title": "Great Salt Lake resolution", "sponsor": "Elison", "grade": "D", "gsrc": "Hive", "vote": "Yea", "tally": "70-1-4", "result": "Signed", "meant": "Little effect", "why": "Symbolic; subject swapped mid-bill.", "started": "A national-debt resolution", "ended": "A Great Salt Lake resolution"}, {"year": 2026, "bill": "HJR 30", "title": "Bear River refuge lakebed transfer", "sponsor": "Snider", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "62-2-11", "result": "Passed", "meant": "Little effect", "why": "Settles a land dispute.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 76", "title": "Data Center Water Transparency", "sponsor": "Koford", "grade": "F", "gsrc": "Hive", "vote": "Yea", "tally": "72-0-3; concur 62-2-11", "result": "Signed", "meant": "Against the collective", "why": "Voted yes after facility water data was made private.", "started": "Public facility-level water data", "ended": "Operators can keep it private; county totals only"}, {"year": 2026, "bill": "HB 60", "title": "Water Rights Amendments", "sponsor": "Shallenberger", "grade": "F", "gsrc": "Hive", "vote": "Yea", "tally": "54-17-4", "result": "Signed", "meant": "Against the collective", "why": "Narrowed the public's grounds to object to water applications.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 507", "title": "Data center incentives", "sponsor": "Roberts", "grade": "C−", "gsrc": "Hive", "vote": "Yea", "tally": "69-1-5", "result": "Signed", "meant": "Mixed", "why": "Bars most local data-center incentives; new secrecy rule.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 296", "title": "Water Commitment (count water given to the lake)", "sponsor": "Nguyen", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "48-19-8", "result": "Signed", "meant": "Against the collective", "why": "Against crediting water sent to the lake.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 328", "title": "Water Usage Modifications (spray irrigation)", "sponsor": "Okerlund", "grade": "B", "gsrc": "new", "vote": "Nay", "tally": "39-29-7", "result": "Died in Senate", "meant": "Against the collective", "why": "Second year against limiting spray watering.", "started": "", "ended": ""}, {"year": 2026, "bill": "SB 225", "title": "Inland Port water standard", "sponsor": "Stevenson", "grade": "D", "gsrc": "Hive", "vote": "Yea, then Nay", "tally": "67-2-6; final 57-10-8", "result": "Signed", "meant": "Mixed", "why": "Yes on the first vote, no on the final.", "started": "200,000-gal/day cap, Salt Lake City only", "ended": "Cap dropped; statewide; local discretion"}, {"year": 2026, "bill": "HB 509", "title": "Wetlands Study", "sponsor": "Owens", "grade": "F", "gsrc": "Hive", "vote": "Yea", "tally": "58-10-7; 57-8-10", "result": "Signed", "meant": "Against the collective", "why": "Supported the cut-down version.", "started": "\"Wetlands Protection\": baseline, species, mitigation", "ended": "\"Wetlands Study\": large counties only"}, {"year": 2026, "bill": "HB 378", "title": "Fugitive Dust", "sponsor": "Gricius", "grade": "D", "gsrc": "Hive", "vote": "Yea", "tally": "71-2-2", "result": "Signed", "meant": "Against the collective", "why": "Supported a weak dust rule.", "started": "Violators get increased inspections", "ended": "Increased inspections dropped"}, {"year": 2026, "bill": "HB 349", "title": "Statewide Water Storage", "sponsor": "Brooks", "grade": "B", "gsrc": "Hive", "vote": "Yea", "tally": "63-1-11", "result": "Died", "meant": "With the collective", "why": "Supported; the Senate killed it.", "started": "Real loans", "ended": "Nonbinding recommendations"}, {"year": 2026, "bill": "SB 254", "title": "Extracted Natural Resources", "sponsor": "Millner", "grade": "D", "gsrc": "Hive", "vote": "Yea", "tally": "60-12-3", "result": "Signed", "meant": "Against the collective", "why": "Supported it.", "started": "\"Critical Minerals Amendments\"", "ended": "Retitled; about $37M added"}, {"year": 2026, "bill": "HB 157 / HB 125", "title": "Water litigation money", "sponsor": "Shipp", "grade": "F", "gsrc": "Hive", "vote": "Yea", "tally": "57-1-17 / 65-0-10", "result": "HB 125 signed", "meant": "Against the collective", "why": "Voted for both bills used in the money switch.", "started": "$5M for water litigation", "ended": "Moved, then stripped"}, {"year": 2026, "bill": "HB 501", "title": "Water Modifications", "sponsor": "Bolinder", "grade": "D+", "gsrc": "Hive", "vote": "Yea", "tally": "59-13-3", "result": "Died in Senate", "meant": "Against the collective", "why": "Supported it.", "started": "", "ended": ""}, {"year": 2026, "bill": "SB 284", "title": "Local Land and Water", "sponsor": "Fillmore", "grade": "D", "gsrc": "Hive", "vote": "Absent", "tally": "61-7-7", "result": "Signed", "meant": "Little effect", "why": "Did not vote.", "started": "", "ended": ""}, {"year": 2026, "bill": "HB 187", "title": "Water Amendments", "sponsor": "Jack", "grade": "C", "gsrc": "new", "vote": "Yea", "tally": "66-0-9", "result": "Signed", "meant": "Little effect", "why": "Housekeeping.", "started": "", "ended": ""}];
+const C={"With the collective": "#1d6b57", "Against the collective": "#b42318", "Little effect": "#6b7280", "Mixed": "#b7791f"};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+function draw(){
+ const y=document.getElementById('fy').value,m=document.getElementById('fm').value,v=document.getElementById('fv').value,q=document.getElementById('fq').value.toLowerCase();
+ const rows=D.filter(d=>(!y||String(d.year)===y)&&(!m||d.meant===m)&&(!v||d.vote.includes(v))&&(!q||(d.bill+' '+d.title+' '+d.sponsor+' '+d.why).toLowerCase().includes(q)));
+ document.getElementById('tb').innerHTML=rows.map(d=>`<tr><td>${d.year}</td><td><b>${esc(d.bill)}</b><br>${esc(d.title)}<br><span style="font-size:14px;color:#4a5d6e">Primary sponsor: ${esc(d.sponsor)}</span></td><td><b>${esc(d.grade)}</b><br><span style="font-size:13px;color:#4a5d6e">${esc(d.gsrc)}</span></td><td>${esc(d.vote)}</td><td>${esc(d.tally)}</td><td>${esc(d.result)}</td><td><span class="pill" style="background:${C[d.meant]}">${esc(d.meant)}</span><br>${esc(d.why)}</td></tr>`).join('');
+ document.getElementById('count').textContent=`Showing ${rows.length} of ${D.length} votes`;
+}
+['fy','fm','fv','fq'].forEach(id=>document.getElementById(id).addEventListener('input',draw));draw();
+</script>
+<script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
