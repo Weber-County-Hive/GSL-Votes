@@ -66,7 +66,7 @@ details.sources li{margin:6px 0;font-size:16.5px}
 <h1>Rep. Jason Kyle and the Great Salt Lake: Every Vote, 2023–2026</h1>
 <p>Every Great Salt Lake and water vote Rep. Jason Kyle (R, House District 8) cast in the Utah House, checked against the record and graded on the Hive's rubric.</p>
 <div class="dates">Posted Oct. 25, 2026 · Updated Oct. 25, 2026</div>
-<div class="jump"><a href="#report">Read the full report</a><a href="#at-a-glance">At a glance</a><a href="#started-ended">Started vs. ended</a><a href="#explore">Search every vote</a><a href="#download">Download the data</a></div>
+<div class="jump"><a href="#report" data-gc="gsl-kyle-jump-report">Read the full report</a><a href="#at-a-glance" data-gc="gsl-kyle-jump-at-a-glance">At a glance</a><a href="#started-ended" data-gc="gsl-kyle-jump-started-ended">Started vs. ended</a><a href="#explore" data-gc="gsl-kyle-jump-search">Search every vote</a><a href="#download" data-gc="gsl-kyle-jump-download">Download the data</a></div>
 </div></header>
 <main class="wrap">
 <section id="report">
@@ -876,8 +876,8 @@ details.sources li{margin:6px 0;font-size:16.5px}
 
 <h3 id="download">Download the data</h3>
 <p>The same records, free to use and share. Please credit The Weber County Hive.</p>
-<a class="btn" href="kyle-gsl-votes-2023-2026.csv" download>Download spreadsheet (CSV)</a>
-<a class="btn" href="kyle-gsl-votes-2023-2026.json" download>Download data (JSON)</a>
+<a class="btn" href="kyle-gsl-votes-2023-2026.csv" download data-gc="gsl-kyle-download-csv">Download spreadsheet (CSV)</a>
+<a class="btn" href="kyle-gsl-votes-2023-2026.json" download data-gc="gsl-kyle-download-json">Download data (JSON)</a>
 </section>
 
 <details class="sources"><summary>Sources</summary><ul>
@@ -913,6 +913,22 @@ function draw(){
  document.getElementById('count').textContent=`Showing ${rows.length} of ${D.length} votes`;
 }
 ['fy','fm','fv','fq'].forEach(id=>document.getElementById(id).addEventListener('input',draw));draw();
+</script>
+<script>
+// Click counting for GoatCounter: buttons with data-gc use their own name;
+// any other link counts as "out-" plus the site it goes to; filter use counts once per filter.
+(function(){
+  function gc(path,title){ try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:path,title:title||path,event:true}); }catch(e){} }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href]'); if(!a) return;
+    if(a.dataset.gc) return gc(a.dataset.gc,a.textContent.trim());
+    var h=a.getAttribute('href')||'';
+    if(/^https?:/i.test(h)){ try{ gc('gsl-kyle-out-'+new URL(h).hostname.replace(/^www\./,''),a.textContent.trim()); }catch(err){} }
+  });
+  var seen={};
+  ['fy','fm','fv','fq'].forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('change',function(){ if(!seen[id]){ seen[id]=1; gc('gsl-kyle-filter-'+id,'Used a search filter'); } }); });
+  var sd=document.querySelector('details.sources'); if(sd) sd.addEventListener('toggle',function(){ if(sd.open) gc('gsl-kyle-open-sources','Opened sources'); });
+})();
 </script>
 <script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body></html>
